@@ -1,0 +1,16 @@
+services:
+  emergya_test.event_subscriber:
+    class: Drupal\emergya_test\EventSubscriber\EmergyaTestSubscriber
+    arguments: ['@emergya_test.access_checker']
+    tags:
+      - { name: event_subscriber }
+
+  emergya_test.exception_subscriber:
+    class: Drupal\emergya_test\EventSubscriber\EmergyaProductAccessSubscriber
+    arguments: ['@current_route_match']
+    tags:
+      - { name: event_subscriber }
+
+  emergya_test.access_checker:
+    class: Drupal\emergya_test\Service\AccessChecker
+    arguments: ['@current_user' ,'@request_stack']

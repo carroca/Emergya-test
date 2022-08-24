@@ -1,0 +1,7 @@
+name: Emergya Test
+type: module
+description: Add access check to one node type.
+package: Emergya
+core_version_requirement: ^9.3 || ^10
+dependencies:
+  - drupal:node

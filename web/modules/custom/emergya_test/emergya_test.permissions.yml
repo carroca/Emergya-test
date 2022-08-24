@@ -1,0 +1,4 @@
+bypass emergya_test products:
+  title: 'Bypass Products check'
+  description: 'Allow bypass the check of node products if protected field is set.'
+  restrict access: true

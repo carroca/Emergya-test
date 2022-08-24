@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## #ddev-generated
+## Description: Execute the tests of the project.
+## Usage: emergya-test
+## Example: ddev emergya-test
+
+
+/var/www/html/vendor/bin/phpunit -c /var/www/html/phpunit.local.xml /var/www/html/web/modules/custom/emergya_test/test/src/Kernel/AccessCheckerTest.php
+

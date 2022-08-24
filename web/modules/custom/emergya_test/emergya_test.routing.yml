@@ -1,0 +1,8 @@
+emergya_test.access_form:
+  path: '/emergya/access'
+  defaults:
+    _title: 'Accept the access to the products.'
+    _controller: '\Drupal\emergya_test\Controller\EmergyaTestController::build'
+  requirements:
+    _permission: 'access content'
+
